@@ -28,6 +28,6 @@ npm install
 ng serve
 ```
 
+<img width="1907" height="865" alt="Screenshot from 2025-07-16 00-01-28" src="https://github.com/user-attachments/assets/413ce8ee-cf2f-4ba5-bd4c-5efa64af0ab9" />
+<img width="1907" height="865" alt="Screenshot from 2025-07-16 00-01-40" src="https://github.com/user-attachments/assets/b1fd6ed5-e1c3-4450-8fb2-ff7b855ecf6e" />
 
-<img width="1907" height="865" alt="Screenshot from 2025-07-15 23-58-05" src="https://github.com/user-attachments/assets/f5569cf3-95dd-4c37-b734-c5c8d26258bd" />
-<img width="1907" height="865" alt="Screenshot from 2025-07-15 23-58-20" src="https://github.com/user-attachments/assets/49caaf1d-122f-4460-b7ab-4d2f026140b7" />
