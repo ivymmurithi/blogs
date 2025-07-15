@@ -1,0 +1,30 @@
+<!-- blog-list.component.html -->
+<div class="max-w-7xl mx-auto p-6">
+
+    <!-- Result Count -->
+    <p class="text-gray-600 text-center mb-6">Showing 12 Results of "<strong>Accessibility</strong>"</p>
+
+    <!-- Blog Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div *ngFor="let blog of blogs" class="bg-white border rounded shadow-sm overflow-hidden hover:shadow-md">
+            <a [routerLink]="['/blog', blog.slug]" role="link" [attr.aria-label]="'Read blog titled ' + blog.title"
+                class="block rounded-lg shadow hover:shadow-md transition duration-300 bg-white overflow-hidden">
+            <div class="bg-gray-200 h-40"></div>
+            <div class="p-4">
+                <p class="text-sm text-gray-500 mb-1">{{ blog.created_at | date:'MMM yyyy' }}</p>
+                <h2 class="text-md font-bold mb-2">{{ blog.title }}</h2>
+                <p class="text-gray-600 text-sm line-clamp-3">{{ blog.content | slice:0:100 }}...</p>
+            </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="flex justify-center mt-10 space-x-2">
+        <button class="px-3 py-1 border rounded hover:bg-gray-100">&lt;</button>
+        <button class="px-3 py-1 border rounded bg-gray-800 text-white">1</button>
+        <button class="px-3 py-1 border rounded hover:bg-gray-100">2</button>
+        <button class="px-3 py-1 border rounded hover:bg-gray-100">3</button>
+        <button class="px-3 py-1 border rounded hover:bg-gray-100">&gt;</button>
+    </div>
+</div>
