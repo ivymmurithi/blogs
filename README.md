@@ -4,8 +4,22 @@ The backend for the blog app, built with Go (no frameworks) and PostgreSQL.
 
 ## Setup
 
-1. Ensure PostgreSQL is running and `.env` is configured.
-2. Run the server:
+1. Setup DB_URL and port in your .env file. Check .env.example file inside the blogs-backend directory to see how the .env file should look like.
+2.Create table in psql
+   ```bash
+     CREATE TABLE blogs (
+      id SERIAL PRIMARY KEY,
+      title TEXT NOT NULL,
+      content TEXT NOT NULL,
+      slug TEXT UNIQUE NOT NULL,
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      );
+    ```
+3.  Add dummy blogs to the database.
+    ```bash
+     psql -U youruser -d blogs -f seed.sql
+     ```
+4. Run the server:
 
 ```bash
 go run main.go db.go handlers.go models.go
