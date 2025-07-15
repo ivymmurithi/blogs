@@ -1,4 +1,4 @@
-<img width="1907" height="865" alt="Screenshot from 2025-07-15 23-58-20" src="https://github.com/user-attachments/assets/9c73f945-b102-49fa-8c0a-c283a78e6ad9" /># Blog API (Go + PostgreSQL)
+# Blog API (Go + PostgreSQL)
 
 The backend for the blog app, built with Go (no frameworks) and PostgreSQL.
 
